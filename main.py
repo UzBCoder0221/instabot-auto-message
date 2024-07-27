@@ -27,6 +27,7 @@ if __name__ == "__main__":
     username = "yuldoshevb_0221"
     recipient_username = "anime._.uz"
     password = os.getenv('PASSWORD')
+    print(password)
 
     try:
         cl = login(username, password)
