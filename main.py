@@ -4,16 +4,6 @@ import os
 from random import shuffle,choices,randint
 from string import ascii_lowercase, ascii_uppercase
 
-def load_env_file(filepath):
-    with open(filepath) as f:
-        for line in f:
-            if line.strip() and not line.startswith('#'):
-                key, value = line.strip().split('=', 1)
-                os.environ[key] = value
-
-
-load_env_file('.env')
-
 def login(username, password):
     cl = Client()
     cl.login(username, password)
@@ -46,6 +36,3 @@ if __name__ == "__main__":
             sleep(1)
     except Exception as e:
         print(f"An error occurred: {e}")
-
-'''
-'''
