@@ -25,5 +25,5 @@ jobs:
 
     - name: Run bot
       env:
-          IG_PASSWORD: ${{ secrets.PASSWORD }}
+          PASSWORD: ${{ secrets.PASSWORD }}
       run: python main.py
