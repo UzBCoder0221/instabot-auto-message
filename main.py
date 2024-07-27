@@ -5,7 +5,7 @@ from random import shuffle,choices,randint
 from string import ascii_lowercase, ascii_uppercase
 
 def login(username, password):
-    cl = Client(proxy="https://45.126.168.81:4145")
+    cl = Client(proxy="https://45.126.168.81:4145",timeout=15)
     cl.login(username, password)
     return cl
 
